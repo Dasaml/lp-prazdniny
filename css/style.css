@@ -1,0 +1,851 @@
+@font-face {
+	font-family: "Space Grotesk"; 
+	src: url("../fonts/SpaceGrotesk-Medium.woff2") format("woff2");
+	font-weight: 500;
+	font-display: swap;
+}
+@keyframes waveStretch {
+    0% { transform: scaleY(1); }
+    50% { transform: scaleY(1.05); }
+    100% { transform: scaleY(1); }
+}
+
+html {
+	scroll-behavior: smooth;
+	overflow-x:hidden;
+}
+body.lp-prazdniny {
+	display: block;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	font-family: "Space Grotesk", Arial, sans-serif; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	line-height: 23px;
+	color: #ffffff;
+	background-color: #502983;
+	scroll-behavior: smooth;
+}
+.lp-prazdniny p {
+	color: #000;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.6;
+	margin: .5em 0;
+	z-index: 2;
+}
+.lp-prazdniny .strong-text {
+	font-weight: 600;
+}
+.lp-prazdniny a {
+	text-decoration: none;
+	outline: none;
+	color: #ffffff;
+}
+.lp-prazdniny .link-inline {
+	text-decoration: underline;
+	outline: none;
+	color: #6200bf;
+}
+.lp-prazdniny .btn {
+	border-width: 0;
+	min-width: 120px;
+	max-width: fit-content;
+	border-radius: 38px;
+	-webkit-box-shadow: 0px 10px 15px 0px rgba(57,55,61,1);
+	-moz-box-shadow: 0px 10px 15px 0px rgba(57,55,61,1);
+	box-shadow: 0px 10px 15px 0px rgba(57,55,61,1);
+	padding: 10px 35px;
+	margin: 0;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: 600;
+	letter-spacing: 2px;
+	cursor: pointer;
+	opacity: 1;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.lp-prazdniny .btn-purple {
+	color: #ffb233;
+	background-color: #6200bf;
+	margin: 2em 0 0;
+	z-index: 20;
+	position: relative;
+}
+.lp-prazdniny .btn-purple:hover {
+	background-color: #4e0196;
+}
+.lp-prazdniny .btn-orange {
+	background-color: #ffb233;
+	color: #6200bf;
+	margin: 2em 0 0;
+}
+.lp-prazdniny .btn-orange:hover {
+	background-color: #e39a38;
+}
+.lp-prazdniny .section {
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	scroll-margin-top: 5em;
+}
+.lp-prazdniny .logo-main {
+	padding: 2em 0;
+    display: flex;
+    justify-content: center; 
+}
+.lp-prazdniny .logo-main:before {
+	display: block;
+	position: absolute;
+	content:"";
+	background-image: url("../img/list-deco-mobile.webp");
+	background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+}
+.lp-prazdniny .logo-main img {
+	width: 100%;
+	max-width: 160px;
+	height: auto;
+}
+
+/* Sekce 1: Prázdniny na 5 let */
+.lp-prazdniny .container-narrow {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    z-index: 30;
+}
+.lp-prazdniny .promo-five-years {
+    position: relative;
+    background: #f6ddb2 url(../img/bg-pisek.webp) no-repeat center bottom;
+    background-size: cover;
+    min-height: 850px;
+    display: block;
+    padding: 0;
+}
+.lp-prazdniny .promo-five-years:before {
+	display: none;
+	position: absolute;
+	content:"";
+	background-image: url("../img/palma.webp");
+	background-position: top left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 10px;
+    left: -140px;
+    width: 400px;
+    height: 400px;
+    -webkit-transform: rotate(16deg);
+    -ms-transform: rotate(16deg);
+    transform: rotate(16deg);
+}
+.lp-prazdniny .promo-five-years .content-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+	position: relative;
+	z-index: 30;
+	padding-top: 20px;
+}
+.lp-prazdniny .promo-five-years .content-wrapper:before {
+	display: none;
+	position: absolute;
+	content:"";
+	background-image: url("../img/palma.webp");
+	background-position: bottom right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: -345px;
+    bottom: 65px;
+    width: 400px;
+    height: 400px;
+}
+.lp-prazdniny .promo-five-years .text-content {
+	position: relative;
+    width: 100%;
+    z-index: 40;
+}
+.lp-prazdniny .promo-five-years .promo-main-title.desktop {
+	display: none;
+    max-width: 270px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    margin: 0 auto 20px;
+}
+.lp-prazdniny .promo-five-years .promo-main-title.mobile {
+	display: block;
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    margin: 0 auto 20px;
+}
+.lp-prazdniny .promo-five-years .sub-promo {
+	text-align: center;
+    padding-left: 0;
+    padding: 0 0 50px;
+    z-index: 2;
+    position: relative;
+}
+.lp-prazdniny .promo-five-years .promo-subtitle-img {
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: -15px;
+    display: none;
+}
+.lp-prazdniny .promo-five-years .text-content .lead {
+	display: none;
+    color: #6000bf;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 30px 0 0;
+    max-width: 350px;
+}
+.lp-prazdniny .promo-five-years .text-content .details {
+    font-weight: bold;
+    font-size: 14px;
+}
+.lp-prazdniny .promo-five-years .visual-content {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+}
+.lp-prazdniny .promo-five-years .product-shot.desktop {
+	display: none;
+	position: absolute;
+    top: 40px;
+    right: -245px;
+    width: 690px;
+    height: auto;
+    z-index: 5;
+}
+.lp-prazdniny .promo-five-years .product-shot.mobile {
+	display: block;
+	width: 100%;
+	height: auto;
+	z-index: 1;
+	position: relative;
+}
+.lp-prazdniny .promo-five-years .wave-layer {
+	position: absolute;
+	bottom: -3px;
+	right: 0;
+	width: 100%;
+	z-index: 10;
+	pointer-events: none;
+	-webkit-transform-origin: bottom center;
+	-ms-transform-origin: bottom center;
+	transform-origin: bottom center; 
+	-webkit-animation: waveStretch 7s ease-in-out infinite; 
+	animation: waveStretch 7s ease-in-out infinite;
+	will-change: transform;
+}
+.lp-prazdniny .promo-five-years .wave-layer .wave-mobile {
+	display: block;
+    width: 100%;
+    height: auto;
+}
+.lp-prazdniny .promo-five-years .wave-layer .wave-desktop {
+	display: none;
+    width: 100%;
+    height: auto;
+}
+.lp-prazdniny .promo-five-years .main-hero-visual {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.lp-prazdniny .promo-five-years .deco-ostrov-left {
+	display: none;
+    position: absolute;
+    bottom: 0;
+    left: -70px;
+    width: 45vw;
+    max-width: 665px;
+    height: auto;
+    z-index: 2;
+}
+
+/* Sekce 2: Prázdniny na 2 roky */
+.lp-prazdniny .promo-two-years {
+    position: relative;
+    background: #a8b110 linear-gradient(180deg, #a8b110 0%, #587d39 100%);
+    background-size: cover;
+    min-height: 100%;
+    display: block;
+}
+.lp-prazdniny .promo-two-years:before {
+	display: none;
+	position: absolute;
+	content:"";
+	background-image: url("../img/vetve-2.webp");
+	background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -75px;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    z-index: 40;
+}
+.lp-prazdniny .promo-two-years .visual-content {
+    width: 100%;
+    z-index: 5;
+}
+.lp-prazdniny .promo-two-years .content-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	position: relative;
+	padding-top: 0;
+	padding-bottom: 20px;
+	z-index: 10;
+}
+.lp-prazdniny .promo-two-years .text-content {
+	width: 100%;
+    position: relative;
+    z-index: 20;
+    text-align: center;
+}
+.lp-prazdniny .promo-two-years .text-content p {
+	display: none;
+	color: #ffffff;
+	font-size: 16px;
+    line-height: 1.4;
+    margin: 30px 0 0;
+    max-width: 300px;
+}
+.lp-prazdniny .promo-two-years .promo-title-img-2 {
+	display: none;
+	max-width: 350px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: -35px;
+}
+.lp-prazdniny .promo-two-years .product-visual.mobile {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: -20px 0 0;
+}
+.lp-prazdniny .promo-two-years .product-visual.desktop {
+	display: none;
+	width: 665px;
+	height: auto;
+	position: absolute;
+	left: -255px;
+	top: -50px;
+}
+.lp-prazdniny .promo-two-years .product-visual-2 {
+	display: none;
+    position: absolute;
+    right: -280px;
+    bottom: -140px;
+    width: 530px;
+    height: auto;
+    z-index: 15;
+    pointer-events: none;
+}
+
+/* Sekce 3: partners */
+
+.lp-prazdniny .partners {
+	padding: 0 0 5em;
+	position: relative;
+	overflow: hidden;
+}
+.lp-prazdniny .partners:before {
+	display: none;
+	position: absolute;
+	content:"";
+	background-image: url("../img/vetve.webp");
+	background-position: bottom left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: -25px;
+    left: 0;
+    width: 300px;
+    height: 300px;
+}
+.lp-prazdniny .partners .text-image-inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.lp-prazdniny .partners .text-image-inner h3 {
+	color: #ffb233;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    line-height: 1.1;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 0 20px;
+}
+.lp-prazdniny .partners .partner-logos {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	gap: 20px;
+}
+.lp-prazdniny .partners .partner-logos img {
+	width: auto;
+	height: 27px;
+}
+.lp-prazdniny .site-footer {
+	display: block;
+	padding: 3em 1em 2em;
+	
+	text-align: center;
+	background-color: #502983;
+}
+.lp-prazdniny .footer-inner {
+	max-width: 950px;
+	margin: 0 auto;
+}
+.lp-prazdniny .site-footer a {
+	display: inline-block;
+}
+.lp-prazdniny .footer-logo {
+	width: 150px;
+	height: auto;
+	padding: 0 0 1em;
+}
+.lp-prazdniny .text-image-inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding: 1em 0 0;
+}
+.lp-prazdniny .footer-warning {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	gap: 10px;
+}
+.lp-prazdniny .footer-warning img {
+	width: auto;
+	height: 30px;
+}
+.lp-prazdniny .footer-warning p {
+	color: #ffffff;
+	font-size: .9rem;
+	font-weight: 500;
+	text-align: left;
+	margin: 0 0 15px;
+}
+.lp-prazdniny .copyright {
+	color: #ffffff;
+	font-size: .9rem;
+	margin: 20px 0;
+}
+.lp-prazdniny .bingo-preferences-center {
+	color: #ffffff;
+	font-size: 1rem;
+	font-weight: 400;
+	text-decoration: none;
+	padding: 1em 0 0;
+}
+
+@media (min-width: 768px) {
+	.lp-prazdniny .logo-main img {
+		max-width: 200px;
+	}
+	.lp-prazdniny .container-narrow {
+		padding: 0 1em;
+	}
+	.lp-prazdniny .btn-button {
+		margin: 0 0 1em;
+	}
+	.lp-prazdniny .btn {
+		padding: 15px 35px;
+	}
+	.lp-prazdniny .promo-five-years {
+	    padding: 0 0 80px;
+	}
+	.lp-prazdniny .promo-five-years .content-wrapper {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-webkit-box-align: end;
+		-ms-flex-align: end;
+		align-items: flex-end;
+		position: relative;
+		z-index: 30;
+		padding-top: 20px;
+	}
+	.lp-prazdniny .logo-main:before {
+		display: none;
+	}
+	.lp-prazdniny .promo-five-years .text-content {
+	    width: 370px;
+	}
+	.lp-prazdniny .promo-five-years .promo-subtitle-img {
+	    display: block;
+	}
+	.lp-prazdniny .promo-five-years .text-content .lead {
+		display: block;
+	}
+	.lp-prazdniny .promo-five-years .product-shot.desktop {
+		display: block;
+		top: 60px;
+        right: -106px;
+        width: 600px;
+	}
+	.lp-prazdniny .promo-five-years .product-shot.mobile {
+		display: none;
+	}
+	.lp-prazdniny .logo-main {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+		justify-content: flex-start; 
+	}
+	.lp-prazdniny .promo-five-years .promo-main-title.desktop {
+		display: block;
+	    max-width: 340px;
+	    margin-bottom: 50px;
+	    margin: 0;
+	}
+	.lp-prazdniny .promo-five-years .promo-main-title.mobile {
+		display: none;
+	}
+	.lp-prazdniny .promo-five-years .wave-layer .wave-desktop {
+		display: block;
+	}
+	.lp-prazdniny .promo-five-years .wave-layer .wave-mobile {
+		display: none;
+	}
+	.lp-prazdniny .promo-five-years .wave-layer {
+	    width: 70%;
+	    z-index: 35;
+	}
+	.lp-prazdniny .promo-five-years .sub-promo {
+		text-align: unset;
+	    padding-left: 20px;
+	    padding: 0;
+	    z-index: 2;
+	    position: relative;
+	}
+	.lp-prazdniny .promo-two-years {
+	    min-height: 650px;
+	}
+	.lp-prazdniny .promo-two-years .content-wrapper {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		padding-top: 3em;
+		padding-bottom: 0;
+	}
+	.lp-prazdniny .promo-two-years .promo-title-img-2 {
+		display: block;
+	}
+	.lp-prazdniny .promo-two-years .text-content p {
+		display: block;
+		text-align: left;
+	}
+	.lp-prazdniny .promo-two-years .product-visual.desktop {
+	    display: block;
+	}
+	.lp-prazdniny .promo-two-years .product-visual.mobile {
+		display: none;
+	}
+	.lp-prazdniny .promo-two-years .product-visual-2 {
+		display: block;
+	}
+	.lp-prazdniny .promo-two-years .visual-content {
+	    width: 50%;
+	    z-index: 5;
+	}
+	.lp-prazdniny .promo-two-years .text-content {
+		width: 50%;
+		text-align: left;
+	}
+	.lp-prazdniny .partners .text-image-inner h3 {
+	    font-size: 2rem;
+	}
+	.lp-prazdniny .partners {
+		padding: 8em 0 5em;
+	}
+	.lp-prazdniny .partners .partner-logos img {
+		height: 35px;
+	}
+	.lp-prazdniny .footer-warning {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		gap: 10px;
+	}
+	.lp-prazdniny .footer-warning p {
+		text-align: center;
+		margin: 10px 0;
+	}
+}
+
+@media (min-width: 992px) {
+	.lp-prazdniny .container-narrow {
+		padding: 0;
+	}
+	.lp-prazdniny .btn-button {
+		margin: 0 0 1em;
+	}
+	.lp-prazdniny .promo-five-years {
+	    padding: 0 0 130px;
+	}
+	.lp-prazdniny .promo-five-years .content-wrapper {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-webkit-box-align: end;
+		-ms-flex-align: end;
+		align-items: flex-end;
+		position: relative;
+		z-index: 5;
+		padding-top: 20px;
+	}
+	.lp-prazdniny .promo-five-years .text-content {
+	    width: 550px;
+	}
+	.lp-prazdniny .promo-five-years .promo-subtitle-img {
+	    display: block;
+	    max-width: 450px;
+	    margin-left: -35px;
+	}
+	.lp-prazdniny .promo-five-years .text-content .lead {
+		display: block;
+		max-width: 400px;
+	}
+	.lp-prazdniny .promo-five-years .product-shot.desktop {
+		top: 32px;
+		right: -240px;
+		width: 690px;
+	}
+	.lp-prazdniny .promo-five-years .product-shot.mobile {
+		display: none;
+	}
+	.lp-prazdniny .promo-five-years .deco-ostrov-left {
+		display: block;
+	}
+	.lp-prazdniny .promo-five-years:before {
+		display: block;
+	}
+	.lp-prazdniny .promo-five-years .content-wrapper:before {
+		display: block;
+	}
+	.lp-prazdniny .promo-two-years:before {
+		display: block;
+	}
+	.lp-prazdniny .logo-main {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+		justify-content: flex-start; 
+	}
+	.lp-prazdniny .promo-five-years .promo-main-title.desktop {
+	    max-width: 400px;
+	}
+	.lp-prazdniny .promo-five-years .wave-layer .wave-desktop {
+		display: block;
+	}
+	.lp-prazdniny .promo-five-years .wave-layer .wave-mobile {
+		display: none;
+	}
+	.lp-prazdniny .promo-five-years .wave-layer {
+	    width: 59%;
+	    z-index: 35;
+	}
+	.lp-prazdniny .promo-five-years .sub-promo {
+		text-align: unset;
+	    padding-left: 20px;
+	    z-index: 2;
+	    position: relative;
+	}
+	.lp-prazdniny .promo-two-years {
+	    min-height: 650px;
+	}
+	.lp-prazdniny .promo-two-years .content-wrapper {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		padding-top: 5em;
+		padding-bottom: 0;
+	}
+	.lp-prazdniny .promo-two-years .promo-title-img-2 {
+		display: block;
+		max-width: 435px;
+	}
+	.lp-prazdniny .promo-two-years .text-content p {
+		max-width: 400px;
+	}
+	.lp-prazdniny .promo-two-years .product-visual.desktop {
+	    width: 715px;
+	}
+	.lp-prazdniny .promo-two-years .product-visual.mobile {
+		display: none;
+	}
+	.lp-prazdniny .promo-two-years .product-visual-2 {
+		right: -320px;
+		bottom: -170px;
+		width: 530px;
+	}
+	.lp-prazdniny .promo-two-years .visual-content {
+	    width: 50%;
+	    z-index: 5;
+	}
+	.lp-prazdniny .promo-two-years .text-content {
+		width: 50%;
+	}
+	.lp-prazdniny .partners .text-image-inner h3 {
+	    font-size: 2rem;
+	}
+	.lp-prazdniny .partners {
+		padding: 8em 0 5em;
+	}
+	.lp-prazdniny .partners:before {
+		display: block;
+	}
+	.lp-prazdniny .partners .partner-logos img {
+		height: 45px;
+	}
+	.lp-prazdniny .partners .partner-logos {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+
+}
+
+@media (min-width: 2300px) {
+    .lp-prazdniny .product-shot {
+        right: 0;
+    }
+    .lp-prazdniny .promo-five-years .deco-ostrov-left {
+		left: 40px;
+		width: 70vw;
+		max-width: 1065px;
+	}
+	.lp-prazdniny .promo-five-years .content-wrapper:before {
+	    right: -510px;
+	    bottom: 0;
+	    width: 500px;
+	    height: 500px;
+	}
+}
