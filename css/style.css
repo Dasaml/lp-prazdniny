@@ -297,6 +297,9 @@ body.lp-prazdniny {
 }
 
 /* Sekce 2: Prázdniny na 2 roky */
+.lp-prazdniny .container-narrow.two-years {
+	z-index: 45;
+}
 .lp-prazdniny .promo-two-years {
     position: relative;
     background: #a8b110 linear-gradient(180deg, #a8b110 0%, #587d39 100%);
