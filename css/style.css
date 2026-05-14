@@ -266,9 +266,9 @@ body.lp-prazdniny {
 	-webkit-transform-origin: bottom center;
 	-ms-transform-origin: bottom center;
 	transform-origin: bottom center; 
-	-webkit-animation: waveStretch 7s ease-in-out infinite; 
-	animation: waveStretch 7s ease-in-out infinite;
-	will-change: transform;
+	-webkit-animation: waveStretch 5s ease-in-out infinite; 
+    animation: waveStretch 5s ease-in-out infinite;
+    will-change: transform;
 }
 .lp-prazdniny .promo-five-years .wave-layer .wave-mobile {
 	display: block;
