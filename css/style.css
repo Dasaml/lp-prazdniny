@@ -448,6 +448,16 @@ body.lp-prazdniny {
 .lp-prazdniny .partners .partner-logos img {
 	width: auto;
 	height: 27px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+	will-change: transform;
+}
+.lp-prazdniny .partners .partner-logos img:hover {
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
 }
 .lp-prazdniny .site-footer {
 	display: block;
