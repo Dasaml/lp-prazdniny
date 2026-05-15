@@ -536,6 +536,10 @@ body.lp-prazdniny {
 	text-decoration: none;
 	padding: 1em 0 0;
 }
+.lp-prazdniny .bingo-preferences-center:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
 
 @media (min-width: 768px) {
 	.lp-prazdniny .logo-main img {
