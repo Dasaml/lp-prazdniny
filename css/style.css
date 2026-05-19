@@ -26,8 +26,8 @@ body.lp-prazdniny {
 	font-weight: 500;
 	font-style: normal;
 	line-height: 23px;
-	color: #fff;
-	background-color: #000;
+	color: #ffffff;
+	background-color: #000000;
 	scroll-behavior: smooth;
 }
 .lp-prazdniny p {
@@ -114,7 +114,7 @@ body.lp-prazdniny {
     top: 0;
     right: 0;
     width: 95px;
-    height: 95px;
+    height: 95pxpx;
 }
 .lp-prazdniny .logo-main img {
 	width: 100%;
@@ -208,8 +208,7 @@ body.lp-prazdniny {
 }
 .lp-prazdniny .promo-five-years .sub-promo {
 	text-align: center;
-    padding-left: 0;
-    padding: 0 0 50px;
+    padding: 15px 0 50px 0;
     z-index: 2;
     position: relative;
 }
@@ -257,13 +256,13 @@ body.lp-prazdniny {
 	position: relative;
 }
 .lp-prazdniny .promo-five-years .wave-layer {
-	position: absolute;
-	bottom: -3px;
-	right: 0;
-	width: 100%;
-	z-index: 10;
-	pointer-events: none;
-	-webkit-transform-origin: bottom center;
+ 	position: absolute;
+    bottom: -3px;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+    pointer-events: none;
+    -webkit-transform-origin: bottom center;
 	-ms-transform-origin: bottom center;
 	transform-origin: bottom center; 
 	-webkit-animation: waveStretch 5s ease-in-out infinite; 
@@ -369,7 +368,7 @@ body.lp-prazdniny {
 	display: block;
 	width: 100%;
 	height: auto;
-	margin: -20px 0 0;
+	margin: 20px 0 0;
 }
 .lp-prazdniny .promo-two-years .product-visual.desktop {
 	display: none;
